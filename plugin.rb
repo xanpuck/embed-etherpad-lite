@@ -2,11 +2,12 @@
 # about: Embed Etherpad Lite pads using Onebox.
 # version: 1.0
 # authors: Bernhard Fürst
+# edited by xanpuck
 # url: https://github.com/fuerst/embed-etherpad-lite
 
 class Onebox::Engine::EtherpadLiteOnebox
   include Onebox::Engine
-  # Try to guess Etherpad Lite links like http(s)://domain.tld:port/p/pad-id
+  # Try to guess Pad like pad.foebud.org
   matches_regexp /https:\/\/pad.foebud.org\/[^\/]+$/
 
   # See https://github.com/ether/etherpad-lite/wiki/Embed-Parameters
