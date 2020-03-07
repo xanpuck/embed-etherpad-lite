@@ -7,7 +7,7 @@
 class Onebox::Engine::EtherpadLiteOnebox
   include Onebox::Engine
   # Try to guess Etherpad Lite links like http(s)://domain.tld:port/p/pad-id
-  matches_regexp /\/p\/[^\/]+$/
+  matches_regexp /https:\/\/pad.foebud.org\/[^\/]+$/
 
   # See https://github.com/ether/etherpad-lite/wiki/Embed-Parameters
   def to_html
